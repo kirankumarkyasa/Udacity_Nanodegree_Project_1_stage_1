@@ -1,0 +1,6 @@
+# Udacity_Nanodegree_Project_1
+The file RetroManager Contains a static String field with name API_KEY
+
+The API_KEY is obtained from the www.themoviedb.org 
+
+and replace that Dummy key with your own API_KEY to be able to Run this Project. 

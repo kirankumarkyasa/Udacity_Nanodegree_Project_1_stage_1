@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="22dp"
+            android:padding="5dp"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="@color/colorPrimary"
+            android:id="@+id/original_title_tv"/>
+
+        <RelativeLayout android:id="@+id/content_movie_details"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/content_movie_details_header"
+            android:padding="10dp"
+            >
+
+            <ImageView
+                android:id="@+id/movie_poster_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"/>
+
+            <TextView
+                android:id="@+id/release_date_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/movie_poster_iv"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="left"
+                android:paddingLeft="10dp"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/rating_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/release_date_tv"
+                android:layout_toRightOf="@+id/movie_poster_iv"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="left"
+                android:paddingLeft="10dp"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/plot_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/movie_poster_iv"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="left"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="16dp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>
+
